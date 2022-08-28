@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+#content-info-aboutme{
+    display: flex;
+    margin: 0 0 50px 0;
+}
+
+#imgPerson{
+    width: 100%;
+    min-width: 300px;
+}
+
+#imgPerson > img{
+    display: block;
+    width: 80%;
+    border-radius: 3px;
+    margin: 0 auto;
+    transform: translateX(-70px);
+    opacity: 0;
+    transition: all .6s ease;
+}
+
+#info-personality{
+    width: 100%;
+}
+
+.title-info-aboutme{
+    margin: 10px 50px;
+}
+
+.text1-aboutme{
+    font-family: 'Anek Telugu', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin: 0;
+    text-align: left;
+    padding: 0 0 0 16px;
+    transform: translateY(15px);
+    overflow: hidden;
+}
+
+.greeting{
+    display: block;
+    transform: translateX(-100%);
+}
+
+#sig{
+    color: #F4DB07;
+    margin-left: 5px;
+}
+
+
+
+
+.texts-aboutme{
+    display: flex;
+    padding-left: 16px;
+}
+
+.text2-aboutme {
+    margin: 0;
+    width: inherit;
+    text-align: left;
+    padding-right: 15px;
+    overflow: hidden;
+}
+
+.text2-aboutme > span{
+    display: block;
+    font-family: 'Anek Telugu', sans-serif;
+    font-size: 70px;
+    margin: 0;
+    transform: translateX(-100%);
+}
+
+.text3-aboutme{
+    margin: 0;
+    transform: scale(1.2) translate(21px, -9px);
+    width: inherit;
+    text-align: center;
+    padding: 0;
+    overflow: hidden;
+}
+
+.text3-aboutme > span{
+    display: block;
+    font-size: 70px;
+    font-family: 'Monoton', cursive;
+    color: #F4DB07;
+    transform: translateX(-100%);
+}
+
+
+.text4-aboutme{
+    text-align: left;
+    margin-top: 0;
+    transform: translateY(-15px);
+    overflow: hidden;
+}
+
+.text4-aboutme > span{
+    padding: 5px;
+    display: inline-block;
+    background-color: #F4DB07;
+    color: #000;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+    margin-top: 10px;
+    font-size: 16px;
+    transform: translateX(-115%);
+}
+
+.content-description{
+    margin: 30px 50px 0px 50px;
+}
+
+.content-description > p {
+    margin: 0;
+    text-align: justify;
+    padding: 20px 0;
+    font-style: italic;
+    opacity: 0;
+    transform: scale(.5);
+    transition: all 1s ease;
+}
+
+.text1-aboutme > span, .text2-aboutme > span, .text3-aboutme > span, .text4-aboutme > span{
+    transition: transform .6s ease;
+}
+
+
+
+
+@media only screen and (max-width: 1024px){
+
+    #content-info-aboutme{
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 50px 0;
+    }
+
+    #imgPerson > img{
+        width: 60%;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px){
+
+    .text2-aboutme  > span{
+        font-size: 50px;
+    }
+
+    .text3-aboutme  > span{
+        font-size: 50px;
+    }
+
+    .text4-aboutme > span {
+        font-size: 12px;
+    }
+
+
+    .content-description > p {
+        font-size: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 400px){
+
+    .text2-aboutme  > span{
+        font-size: 30px;
+    }
+
+    .text3-aboutme  > span{
+        font-size: 30px;
+    }
+
+    .text4-aboutme > span {
+        font-size: 10px;
+    }
+
+}

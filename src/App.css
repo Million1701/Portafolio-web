@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.App {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  transition: all .7s;
+  background-color: #090d16;
+  color: #fff;
+  overflow: hidden;
+  filter: blur(10px);
+}
+
+.contentAbilities, .contentAboutMe, .contentContact, .contentProyects{
+  margin-top: 7rem;
+}
+
+
+/*-----------Section Abilities--------------*/
+
+.content{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin-bottom: 3.5rem;
+}
+
+.textAbilitie{
+  position:absolute;
+  display: inline-block;
+  top: 0;
+  left: -70%;
+  opacity: 0;
+  transition: left .8s cubic-bezier(0.13, 0.78, 0.13, 1.06), opacity 1.4s ease;
+  /* transform: translateX(0); */
+}
+
+.textAbilitie > img{
+  width: 759px;
+}
+
+.pts-x-style{
+  position: absolute;
+  top: 0;
+  right: -155px;
+  opacity: 0;
+  transition: opacity 1s ease, right .7s cubic-bezier(0.13, 0.78, 0.13, 1.06);
+}
+
+.pts-x-style > img{
+  width: 70%;
+}
+
+
+/*-----------Section AboutMe--------------*/
+
+.textAboutMe{
+  position:absolute;
+  display: inline-block;
+  top: 0;
+  right: -70%;
+  opacity: 0;
+  transition: right .8s cubic-bezier(0.13, 0.78, 0.13, 1.06), opacity 1.4s ease;
+}
+
+
+.titleSection{
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.4rem;
+  letter-spacing: 0px;
+  opacity: 0;
+  margin-top: 5rem;
+  margin-bottom: 0;
+  transition: opacity 2.5s cubic-bezier(0.13, 0.91, 0.34, 0.94), letter-spacing 1.2s cubic-bezier(0.06, 0.72, 0.6, 1.4);
+}
+
+
+/*-----------Section Proyects--------------*/
+
+.textProyect, .textContact{
+  position:absolute;
+  display: inline-block;
+  top: 0;
+  left: -70%;
+  opacity: 0;
+  transition: left .8s cubic-bezier(0.13, 0.78, 0.13, 1.06), opacity 1.4s ease;
+}
+
+.textProyect > img, .textContact > img, .textAboutMe > img{
+  width: 759px;
+  height: 128px;
+}
+
+
+@media only screen and (max-width: 1100px){
+  .pts-x-style{
+    opacity: 0;
+  }
+
+  .textAbilitie, .textAboutMe, .textProyect,.textContact{
+    top: 33px;
+  }
+
+  .textAbilitie > img{
+    width: 600px;
+  }
+
+  .textAboutMe > img{
+    width: 600px;
+    height: 100px;
+  }
+
+  .textProyect > img{
+    width: 600px;
+    height: 100px;
+  }
+
+  .textContact > img{
+    width: 600px;
+    height: 100px;
+  }
+}
+
+
+@media only screen and (max-width: 800px){
+  .textAbilitie,.textProyect, .textContact{
+    top: 35px;
+    transform: translateX(-50%);
+  }
+  .textAboutMe{
+    transform: translateX(50%)
+  }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="reloj.css">
+	<script src="https://kit.fontawesome.com/7e9c387e33.js" crossorigin="anonymous"></script>
+	<!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+	<title>Reloj</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+<body id="cuerpo">
+	<div class="content-reloj container-md w-75 row m-auto py-4 text-center bg-danger text-white">
+		<h2 class="mb-4 h1">TIEMPO</h2>
+		<div class="fecha row w-100 m-auto row-cols-auto justify-content-center">
+			<p class="dia-semana col fs-4 px-1"></p>
+			<p class="numero-mes col fs-4 px-1"></p>
+			<p class="col fs-4 px-1">de</p>
+			<p class="mes col fs-4 px-1"></p>
+			<p class="col fs-4 px-1">del</p>
+			<p class="año col fs-4 px-1"></p>
+		</div>
+
+		<div class="reloj row w-100 m-auto row-cols-auto justify-content-center fw-bold">
+			<p class="horas fs-2"></p>
+			<p class="px-1 fs-2">:</p>
+			<p class="minutos fs-2"></p>
+			<p class="px-1 fs-2">:</p>
+			<p class="segundos fs-2"></p>
+		    <p class="am-pm px-1 py-1 d-flex align-items-end fs-5"></p>
+		</div>
+	</div>
+	
+
+	<div class="inputs container-md w-75 m-auto py-4 pb-0 text-center">
+		<div class="create-alarm row w-75 m-auto pb-4 justify-content-center">
+			<input type="number" placeholder="Hora" name="hora" class="text inputHoras col col-12 col-lg-3 my-2 my-lg-0 py-2 mx-2 fs-5 rounded-pill border border-0" min="0" max="12">
+			<input type="number" placeholder="Minutos" name="minutos" class="text inputMinutos col col-12 col-lg-3 my-2 my-lg-0 mx-2 py-2 fs-5 rounded-pill border border-0" min='0' max='59'>
+			<select name="tiempo" class="tiempo col col-12 col-lg-2 my-2 my-lg-0 mx-2 py-2 fs-5 border-0 rounded">
+				<option id='am' value="a.m.">A.M</option>
+				<option id='pm' value="p.m.">P.M</option>
+			</select>
+			<button class="btn-enviar col col-12 col-lg-2 my-2 my-lg-0 ms-3 py-2 fs-5 rounded btn btn-outline-dark">Enviar</button>
+		</div>
+	<div class="sonido w-100 m-auto"></div>
+	</div>
+
+	<template class="plantilla">
+		<div class="content-total row py-4-lg py-3 border-bottom border-3 align-items-center">
+			<div class="tiempo-alarma col col-12 col-lg fs-4 text-center text-lg-start my-2 my-0-lg">
+				<span class="hora">12</span>
+				<span class="puntos">:</span>
+				<span class="minuto">12</span>
+				<span class="ampm-text">A.M</span>
+			</div>
+			<div class="content-mensaje col col-12 col-lg text-center my-2 my-0-lg">
+				<span class="mensaje px-1 fs-4">Programando</span>
+			</div>
+			<div class="info-btns col col-12 col-lg text-center text-lg-end my-2 my-0-lg">
+				<button class="eliminar me-2 btn btn-outline-dark py-2">Remover</button>
+				<button class="editar btn btn-outline-dark py-2">Modificar</button>
+			</div>
+		</div>
+	</template>
+
+	<script src="reloj.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.14/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,17 @@
+{
+  "alarmas": [
+    {
+      "hora": 10,
+      "minuto": "01",
+      "ampm": "a.m.",
+      "message": "Programando",
+      "id": 1
+    },
+    {
+      "hora": "02",
+      "minuto": "01",
+      "ampm": "a.m.",
+      "id": 2
+    }
+  ]
+}

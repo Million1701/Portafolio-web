@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+    background: #ffebcd;
+    font-family: 'Poppins', sans-serif;
+}
+
+#calculator{
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 3px solid #000;
+    border-radius: 5px;
+    position: relative;
+}
+
+#screen{
+    position: relative;
+    padding: 6px 0px;
+    height: 120px;
+    background-color: rgb(249, 249, 249);
+}
+
+.resultados{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 4px 6px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.resultados:hover{
+    background-color: rgb(209, 209, 209);
+}
+
+.resultados > img{
+    width: 20px;
+    cursor: pointer;
+}
+
+#content-num1{
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    text-align: right;
+}
+
+#num1,#num2{
+    display: inline-block;
+    padding-right: 8px;
+
+}
+
+#content-num2{
+    position: absolute;
+    right: 0px;
+    top: 0;
+    
+}
+
+#num1{
+    font-size: 40px;
+    transition: font-size .3s ease-in-out;
+}
+
+#num2{
+    font-size: 20px;
+    transition: font-size .3s ease-in-out;
+}
+
+
+#content-signo{
+    position: absolute;
+    left: 10px;
+    top: 50px;
+    font-size: 30px;
+}
+
+
+#img{
+    display: block;
+    margin: 0 auto;
+}
+
+.btn{
+    border-radius: 0px !important;
+}
+
+.decimal,.dividendo,.especiales{
+    font-size: 23px !important;
+}
+
+.dividendo,.punto,.igual{
+    font-weight: bold !important;
+    font-size: 29px !important;
+}
+
+.dltTotal,.dltNumber,.dlt,.decimal,.dividendo,.punto,.igual{
+    background-color: #fff;
+    transition: all .4s ease;
+    padding: 6px 12px;
+}
+
+.dltTotal:hover{
+    background-color: rgb(252, 53, 53);
+    color: #fff;
+}
+
+.dltNumber:hover,.dlt:hover{
+    background-color: rgb(187, 187, 187);
+}
+
+.decimal:hover{
+    background-color: rgb(221, 221, 221);
+}
+
+.dividendo:hover,.punto:hover{
+    background-color: rgb(38, 38, 38);
+    color: #fff;
+}
+
+.igual:hover{
+    background-color: rgb(48, 175, 95);
+    color: #fff;
+}
+
+
+
+
+
+/* Pantalla de resultados */
+
+
+#resultsScreen{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(241, 241, 241);
+    z-index: 1;
+    -webkit-clip-path: circle(0.3% at 0 0);
+    clip-path: circle(0.3% at 0 0);
+    transition: all .7s ease;
+    overflow-x: hidden;
+}
+
+.valor{
+    word-break: break-all;
+}

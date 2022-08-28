@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
+#content-imgHead{
+    position: relative;
+    z-index: 0;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  
+  #imgHead{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .text-head{
+    position: absolute;
+    top: 28%;
+    left: 30px;
+    width: 70%;
+    color: #fff;
+    font-size: 33px;
+    text-align: start;
+    text-shadow: 0 0 15px #000;
+    font-family: 'Dosis', sans-serif;
+  }
+
+#barra{
+  display: inline-block;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-name: opacityBar;
+}
+
+@keyframes opacityBar {
+  0%{
+    opacity: 0;
+  }
+
+  30%{
+    opacity: 1;
+  }
+
+  50%{
+    opacity: 0;
+  }
+
+  75%{
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .text-head{
+    text-align: center;
+    width: 100%;
+    left: 0;
+  }
+}

@@ -1,0 +1,331 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	line-height: 1.5;
+	font-family: 'Inconsolata', monospace;
+}
+
+
+input[type="radio"]{
+	display: none;
+}
+
+.body{
+	background: #f2f2f2;
+}
+
+
+.navbar{
+	position: fixed;
+	width: 100%;
+	background: #000;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	padding: 8px 16px;
+	z-index: 1;
+}
+
+.navbar a{
+	display: block;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	padding: 8px 16px;
+	font-size: 15px;
+}
+
+.navbar a:hover{
+	background: #ccc;
+	color: #000;
+}
+
+
+/*fin de navbar*/
+
+.container__content{
+	display: table;
+	width: 100%;
+	padding: 0 16px 32px;
+	background:#F7F1E9;
+}
+
+.container-cabecera{
+	width: 100%;
+}
+
+
+.cabecera__img{
+	background-image: url(https://www.w3schools.com/w3images/coffeehouse.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height:75vh;
+	filter: grayscale(50%);
+	position: relative;
+}
+
+.img-title{
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	color: #fff;
+	font-size: 15px;
+	text-align: center;
+}
+
+.img-title h2{
+	font-weight: 300;
+	font-size: 90px;
+}
+
+.cabecera__hora{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 12px 24px;
+}
+
+.cabecera__hora font{
+	background: #000;
+	font-size: 15px;
+	color: #fff;
+	padding: 3px 8px;
+}
+
+
+.cabecera__fecha{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 12px 24px;
+	color: #fff;
+}
+
+
+.about,.menu,.contacto{
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.content__title{
+	padding: 64px 0;
+	text-align: center;
+	margin: 10px 0;
+	width: 100%;
+}
+
+
+.content__title font{
+	background: #000;
+	color: #fff;
+	padding: 2px 8px;
+	display: inline-block;
+	font-weight: 400;
+	letter-spacing: 5px;
+	font-size: 18px;
+	font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.content__paragram{
+	font-size: 18px;
+	margin: 18px 0;
+}
+
+.target__informativa{
+	background: #f1f1f1;
+	border-left: 6px solid #ccc;
+	padding: 0 15px;
+	margin: 15px 0;
+	display: table;
+	width: 100%;
+}
+
+.informativa__paragram{
+	display: block;
+	margin: 18px 0;
+	font-style: italic;
+	font-size: 18px;
+}
+
+.informativa__person{
+	display: block;
+	margin: 18px 0;
+	font-size: 18px;
+}
+
+.about img{
+	width: 100%;
+	filter: grayscale(75%);
+	display: block;
+	margin-top: 30px;
+}
+
+.about__footer-direction{
+	margin: 18px 0;
+	font-size: 18px;
+}
+
+.about__footer-direction span{
+	font-weight: 600;
+}
+
+.title-menu{
+	padding: 48px 0;
+}
+
+.menu-slider{
+	padding: 8px 16px;
+	font-size: 18px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	text-align: center;
+	box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.menu-slider label{
+	cursor: pointer;
+}
+
+.menu-slider label:first-child{
+	background: #616161;
+	color: #fff;
+}
+
+
+.content__info-slider{
+	padding: 48px 16px;
+	width: 100%;
+}
+
+
+.slider__title,.slider__paragram{
+ 	font-family: "Segoe UI", Arial, sans-serif;
+ 	font-size: 18px;
+}
+
+.slider__title{
+	font-weight: 400;
+	margin: 10px 0;
+}
+
+.slider__paragram{
+	color: #757575;
+	font-family: 'Inconsolata', monospace;
+	margin: 18px 0;
+}
+
+
+.menu{
+
+}
+
+.container__cartelera{
+	box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+	overflow: hidden;
+}
+
+.content-slider{
+	display: flex;
+	width: 200%;
+}
+
+
+#input-2:checked ~ .container__content .menu .container__cartelera .content-slider{
+	margin-left: -100%;
+}
+
+#input-2:checked ~ .container__content .menu .menu-slider .bebidas{
+	background: #616161;
+	color: #fff;
+}
+
+#input-2:checked ~ .container__content .menu .menu-slider .comidas{
+	background: transparent;
+	color: #000;
+}
+
+
+.menu img{
+	width: 100%;
+	margin-top: 32px;
+	filter: grayscale(75%);
+	display: block;
+}
+
+
+
+
+
+
+
+
+.paragram__span{
+	background: #000;
+	color: #fff;
+	padding: 3px 8px;
+}
+
+
+.contacto img{
+	width: 100%;
+	filter: grayscale(75%);
+	display: block;
+}
+
+.content-inputs{
+	margin: 15px 0;
+}
+
+.content-inputs input{
+	padding: 16px 8px;
+	font-size: 18px;
+	width: 100%;
+	border:1px solid #ddd;
+}
+
+.inputs__btn{
+	padding: 8px 16px;
+	background: #000;
+	color: #fff;
+	border: none;
+	font-size: 18px;
+	margin: 18px 0;
+}
+
+
+.inputs__btn:hover{
+	cursor: pointer;
+	background: #ccc;
+	color: #000;
+}
+
+
+
+.content-pie{
+	padding: 48px 0;
+	background: #f1f1f1
+}
+
+.pie-creditos{
+	text-align: center;
+	margin: 18px;
+	font-size: 18px;
+}
+
+.pie-creditos a{
+	color: #000;
+}
+
+
+
+@media only screen and (max-width:600px){
+	.cabecera__hora{
+		display: none;
+	}
+}
+
+
+
