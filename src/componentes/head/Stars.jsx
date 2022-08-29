@@ -31,11 +31,11 @@ const StyleStarsTwo = styled.div`
 function Stars() {
     const [loading, setLoading] = useState(false)
 
-        window.addEventListener("load", () => {
-            setTimeout(() => {
-                setLoading(true)
-            }, 100)
-        })
+            window.addEventListener("load", () => {
+                setTimeout(() => {
+                    setLoading(true)
+                }, 100)
+            })
 
 
     return(

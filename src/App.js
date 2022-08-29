@@ -1,3 +1,4 @@
+import React, { Suspense, lazy } from "react";
 import './App.css';
 import ContentHeader from './componentes/ContentHeader';
 import TextAbilitie from './componentes/SectionAbilitie/TextAbilitie';
@@ -27,16 +28,16 @@ function App() {
           </div>
         </div>
         <div className='contentAbilities'>
-          <TextAbilitie />
+          {/* <TextAbilitie /> */}
         </div>
         <div className='contentAboutMe'>
-          <TextAboutme />
+          {/* <TextAboutme /> */}
         </div>
         <div className='contentProyects'>
-          <TextProyect />
+          {/* <TextProyect /> */}
         </div>
         <div className='contentContact'>
-          <TextContact />
+          {/* <TextContact /> */}
         </div>
       </div>
     </div>
