@@ -59,7 +59,7 @@ const plantillas = [{
 }] 
 
 const ContentProyects = () => {
-    const containerPltRef = useRef()
+    // const containerPltRef = useRef()
     const containerCalAlarRef = useRef()
     const calculatorRef = useRef()
     const alarmRef = useRef()
@@ -68,12 +68,12 @@ const ContentProyects = () => {
     const [isVisible, setIsVisible] = useState(false)
     const [isVisible2, setIsVisible2] = useState(false)
 
-    const contentPlts = document.querySelector('.content-plantillas')
+    const contentPlts = document.querySelector('#content-plts')
     
-    const options = {
+    let options = {
         root: null,
         rootMargin: "0px",
-        threshold: 0.5,
+        threshold: 0.1,
     }
 
     const callbackPlantillas = (entries) => {
@@ -91,11 +91,19 @@ const ContentProyects = () => {
     
     useEffect(() => {
         const observer = new IntersectionObserver(callbackPlantillas, options)
-        if (containerPltRef.current) {
-            observer.observe(containerPltRef.current)
+        if (contentPlts) {
+            observer.observe(contentPlts)
         }
     })
 
+
+
+
+    const optionsTwo = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.5,
+    }
 
 
     const callbackProyectLogicos = (entries) => {
@@ -111,7 +119,7 @@ const ContentProyects = () => {
     }
 
     useEffect(() => {
-        const observer = new IntersectionObserver(callbackProyectLogicos, options)
+        const observer = new IntersectionObserver(callbackProyectLogicos, optionsTwo)
         if (containerCalAlarRef.current) {
             observer.observe(containerCalAlarRef.current)
         }
@@ -124,8 +132,8 @@ const ContentProyects = () => {
                 conocimientos en HTML5 y CSS3 <br />cuando recien empezaba.
             </p>
             <hr />
-            <div ref={containerPltRef}>
-                <div className='content-plantillas'>
+            <div id="container">
+                <div className='content-plantillas' id="content-plts">
                     {plantillas.map((el) => (
                     <a key={el.alt} href={el.href} target="_blank" className='imgPlantilla' rel="noreferrer">
                         <img src={el.src} alt={el.alt}/>

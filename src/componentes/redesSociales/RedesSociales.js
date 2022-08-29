@@ -26,7 +26,7 @@ function RedesSociales(props) {
                 <i alt="Intagram" className="fa fa-instagram"></i>
             </a>
             <a ref={redesRefGitHub} alt="GitHub" href={github} className="redSocial" id="GitHub" target="_blank" rel='noreferrer'>
-                <i alt="github" class="fa fa-github"></i>
+                <i alt="github" className="fa fa-github"></i>
             </a>
             <a ref={redesRefPint} alt="Pinterest" href={pinterest} className="redSocial" id="Pinterest" target="_blank" rel='noreferrer'>
                 <i alt="Pinterest" className="fa fa-pinterest-p"></i>
