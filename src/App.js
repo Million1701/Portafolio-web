@@ -7,12 +7,16 @@ import TextContact from './componentes/SectionContact/TextContact';
 import Navbars from './componentes/navBar/Navbars';
 
 
-// window.addEventListener("load", () => {
-//   let app = document.querySelector('.App');
-//   app.style.filter = "blur(0px)"
-// });
 
 function App() {
+  let app = document.querySelector('.App');
+
+  window.addEventListener("load", () => {
+    app.style.filter = "blur(0px)"
+  });
+
+
+
   return (
     <div>
       <Navbars />
