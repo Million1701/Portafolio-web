@@ -9,16 +9,16 @@ import Navbars from './componentes/navBar/Navbars';
 
 
 function App() {
-  let app = document.querySelector('.App');
 
   window.addEventListener("load", () => {
-    app.style.filter = "blur(0px)"
+    let contentApp = document.querySelector('.content-app');
+    contentApp.style.filter = "blur(0px)"
   });
 
 
 
   return (
-    <div>
+    <div className='content-app'>
       <Navbars />
       <div className="App">
         <div id="home">
