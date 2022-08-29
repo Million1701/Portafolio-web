@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import estrellas from '../../imagenes/estrellas.png';
 import styled from 'styled-components';
 
@@ -29,28 +29,20 @@ const StyleStarsTwo = styled.div`
 `
 
 function Stars() {
-    const [loading, setLoading] = useState(false)
-
-            window.addEventListener("load", () => {
-                setTimeout(() => {
-                    setLoading(true)
-                }, 100)
-            })
 
 
     return(
         <>
-
         <StyleStars
-            Bottom={loading ? "30px" : '0px'}
-            Left={loading ? '30px' : '0px'}
-            Scale={loading ? 'scale(1)' : 'scale(1.5)'}>
+            Bottom="30px"
+            Left='30px'
+            Scale='scale(1)'>
             <img src={estrellas} alt="stars" />
         </StyleStars>
         <StyleStarsTwo
-            Top={loading ? "30px" : '0px'}
-            Right={loading ? '30px' : '0px'}
-            Scale={loading ? 'scale(1)' : 'scale(1.5)'}>
+            Top="30px"
+            Right="30px"
+            Scale="scale(1)">
             <img src={estrellas} alt="stars" />
         </StyleStarsTwo>    
     </>

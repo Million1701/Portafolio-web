@@ -1,4 +1,3 @@
-import React, { useRef } from 'react';
 import './App.css';
 import ContentHeader from './componentes/ContentHeader';
 import TextAbilitie from './componentes/SectionAbilitie/TextAbilitie';
@@ -11,17 +10,10 @@ import Navbars from './componentes/navBar/Navbars';
 
 
 function App() {
-  const container = useRef();
-
-  window.addEventListener("load", () => {
-    container.current.style.filter = "blur(0px)"
-  });
-
-
   return (
     <div>
       <Navbars />
-      <div className="app" ref={container}>
+      <div className="app">
         <div id="home">
           <div id="content-imgHead">
             <ContentHeader />
