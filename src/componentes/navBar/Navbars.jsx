@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import './Navbar.css'
 import NavBar from './NavBar'
 import NavbarResponsive from './NavbarResponsive'
 import NavbarTwo from './NavbarTwo'

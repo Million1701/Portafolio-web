@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from "react";
+import React, { useRef } from 'react';
 import './App.css';
 import ContentHeader from './componentes/ContentHeader';
 import TextAbilitie from './componentes/SectionAbilitie/TextAbilitie';
@@ -9,35 +9,35 @@ import Navbars from './componentes/navBar/Navbars';
 
 
 
+
 function App() {
+  const container = useRef();
 
   window.addEventListener("load", () => {
-    let contentApp = document.querySelector('.App');
-    contentApp.style.filter = "blur(0px)"
+    container.current.style.filter = "blur(0px)"
   });
-
 
 
   return (
     <div>
       <Navbars />
-      <div className="App">
+      <div className="app" ref={container}>
         <div id="home">
           <div id="content-imgHead">
             <ContentHeader />
           </div>
         </div>
         <div className='contentAbilities'>
-          {/* <TextAbilitie /> */}
+          <TextAbilitie />
         </div>
         <div className='contentAboutMe'>
-          {/* <TextAboutme /> */}
+          <TextAboutme />
         </div>
         <div className='contentProyects'>
-          {/* <TextProyect /> */}
+          <TextProyect />
         </div>
         <div className='contentContact'>
-          {/* <TextContact /> */}
+          <TextContact />
         </div>
       </div>
     </div>
