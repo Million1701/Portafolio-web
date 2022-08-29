@@ -8,8 +8,8 @@
   background-color: #090d16;
   color: #fff;
   overflow: hidden;
-  filter: blur(10px);
-  -webkit-filter: blur(10px);
+  /* filter: blur(10px);
+  -webkit-filter: blur(10px); */
 }
 
 .contentAbilities, .contentAboutMe, .contentContact, .contentProyects{

@@ -7,10 +7,10 @@ import TextContact from './componentes/SectionContact/TextContact';
 import Navbars from './componentes/navBar/Navbars';
 
 
-window.addEventListener("load", () => {
-  let app = document.querySelector('.App');
-  app.style.filter = "blur(0px)"
-});
+// window.addEventListener("load", () => {
+//   let app = document.querySelector('.App');
+//   app.style.filter = "blur(0px)"
+// });
 
 function App() {
   return (
