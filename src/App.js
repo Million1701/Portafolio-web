@@ -11,14 +11,14 @@ import Navbars from './componentes/navBar/Navbars';
 function App() {
 
   window.addEventListener("load", () => {
-    let contentApp = document.querySelector('.content-app');
+    let contentApp = document.querySelector('.App');
     contentApp.style.filter = "blur(0px)"
   });
 
 
 
   return (
-    <div className='content-app'>
+    <div>
       <Navbars />
       <div className="App">
         <div id="home">
