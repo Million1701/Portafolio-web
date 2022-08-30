@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
+import "./Proyects.css"
 import textProyect from '../../imagenes/proyect.png';
 import { updateResize } from "../updateResize";
 import ContentProyects from "./ContentProyects";

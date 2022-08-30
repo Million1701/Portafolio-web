@@ -7,30 +7,29 @@ import TextContact from './componentes/SectionContact/TextContact';
 import Navbars from './componentes/navBar/Navbars';
 
 
+window.addEventListener("load", () => {
+  const app = document.querySelector('.app');
+  app.style.filter = "blur(0)";
+})
 
 
 function App() {
   return (
     <div>
-      <Navbars />
       <div className="app">
+        <Navbars />
         <div id="home">
           <div id="content-imgHead">
             <ContentHeader />
           </div>
         </div>
-        <div className='contentAbilities'>
-          <TextAbilitie />
-        </div>
-        <div className='contentAboutMe'>
-          <TextAboutme />
-        </div>
-        <div className='contentProyects'>
-          <TextProyect />
-        </div>
-        <div className='contentContact'>
-          <TextContact />
-        </div>
+        <TextAbilitie />
+
+        <TextAboutme />
+
+        <TextProyect />
+
+        <TextContact />
       </div>
     </div>
   );

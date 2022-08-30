@@ -1,5 +1,4 @@
 import React, { useRef, useEffect, useState } from "react";
-import "./AboutMe.css"
 import myperson from "../../imagenes/myPerson.jpg"
 
 const InfoAboutme = () => {

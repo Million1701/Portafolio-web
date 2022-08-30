@@ -13,9 +13,6 @@ import img10Planti from '../../imagenes/imgPlantillas/img10P.jpg';
 import calculadora from '../../imagenes/calculadoraImg.jpg';
 import alarma from '../../imagenes/alarma.jpg';
 
-import "./Proyects.css"
-
-
 const plantillas = [{
     href : 'Plantillas/apartamentos.html',
     src : img1Planti,
@@ -59,7 +56,6 @@ const plantillas = [{
 }] 
 
 const ContentProyects = () => {
-    // const containerPltRef = useRef()
     const containerCalAlarRef = useRef()
     const calculatorRef = useRef()
     const alarmRef = useRef()

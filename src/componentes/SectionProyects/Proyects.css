@@ -1,6 +1,25 @@
+.textProyect{
+    position:absolute;
+    display: inline-block;
+    top: -65px;
+    left: -70%;
+    opacity: 0;
+    transition: left .8s cubic-bezier(0.13, 0.78, 0.13, 1.06), opacity 1.4s ease;
+}
+
+
+.textProyect > img{
+    width: 759px;
+    height: 128px;
+}
+
+
+
+
+
 .proyects{
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 10rem auto;
 }
 
 
@@ -144,7 +163,23 @@ hr{
 }
 
 
+
+@media only screen and (max-width: 1100px){
+    .textProyect > img{
+        width: 600px;
+        height: 100px;
+      }
+    
+}
+
+
+
 @media only screen and (max-width: 800px){
+    .textProyect{
+        transform: translateX(-50%);
+    }
+
+
     .proyects-programacion-logica{
         flex-direction: column;
     }

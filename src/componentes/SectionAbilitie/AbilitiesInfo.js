@@ -12,6 +12,7 @@ const InfoAbilities = styled.div`
     display: flex;
     justify-content: 'center';
     align-items: center;
+    margin-bottom: 10rem;
 
     @media (max-width: 1100px) {
     flex-direction: column;
@@ -19,14 +20,14 @@ const InfoAbilities = styled.div`
     .text-progress{
         margin: 0px 0 15px 0;
     }
-  }
+}
 `;
 
 
 const ImgLaptop = styled.div`
     opacity: 0;
     text-align: center;
-    z-index: -1;
+    z-index: 1;
     padding: 30px 0 0 0;
     transform: translateX(50%);
     transition: opacity 1s ease, transform .7s cubic-bezier(0.36, 0.35, 0.01, 0.94);
@@ -41,7 +42,7 @@ const ImgLaptop = styled.div`
         padding: 30px 0 0 0;
         width: 60%;
     }
-  }
+}
 `;
 
 const ContentBars = styled.div`
@@ -105,7 +106,7 @@ function AbilitiesInfo() {
         setIsVisibleInfo(entry.isIntersecting)
 
         if (isVisibleInfo) {
-            contentBarsRef.current.style.opacity = 1;
+            contentBarsRef.current.style.opacity = "1";
             contentBarsRef.current.style.transform = "translateY(0)";
             imgLaptopRef.current.style.opacity = "1";
             imgLaptopRef.current.style.transform = "translateX(0)";

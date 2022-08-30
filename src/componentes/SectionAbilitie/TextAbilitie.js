@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
+import './Abilities.css';
 import svgFondo from '../../imagenes/fig3.png';
 import textAbilities from '../../imagenes/abilities.png';
 import AbilitiesInfo from "./AbilitiesInfo";

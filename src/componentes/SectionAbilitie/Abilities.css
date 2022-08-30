@@ -1,0 +1,51 @@
+.content{
+    position: relative;
+    margin-bottom: 3.5rem;
+}
+
+
+  .textAbilitie{
+    position:absolute;
+    display: inline-block;
+    top: -65px;
+    left: -70%;
+    opacity: 0;
+    transition: left .8s cubic-bezier(0.13, 0.78, 0.13, 1.06), opacity 1.4s ease;
+    transform: translateX(0);
+  }
+  
+  .textAbilitie > img{
+    width: 759px;
+  }
+  
+  .pts-x-style{
+    position: absolute;
+    top: 0;
+    right: -155px;
+    opacity: 0;
+    transition: opacity 1s ease, right .7s cubic-bezier(0.13, 0.78, 0.13, 1.06);
+  }
+  
+  .pts-x-style > img{
+    width: 70%;
+  }
+
+
+
+@media only screen and (max-width: 1100px){
+
+  .textAbilitie > img{
+    width: 600px;
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .pts-x-style > img{
+    opacity: 0;
+  }
+
+  .textAbilitie{
+    transform: translateX(-50%);
+  }
+}

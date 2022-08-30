@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
+import "./Contact.css"
 import textProyect from '../../imagenes/textContact.png';
 import { updateResize } from "../updateResize";
 import ContentContact from "./ContentContact";

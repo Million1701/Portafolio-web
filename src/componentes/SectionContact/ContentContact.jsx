@@ -1,5 +1,4 @@
 import React from 'react'
-import "./Contact.css"
 import { useContact } from '../../hooks/useContact'
 import Swal from 'sweetalert2'
 
