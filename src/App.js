@@ -16,8 +16,8 @@ import Navbars from './componentes/navBar/Navbars';
 function App() {
   return (
     <div>
-      <div>
-        <Navbars />
+      <Navbars />
+      <div className="app">
         <div id="home">
           <div id="content-imgHead">
             <ContentHeader />
