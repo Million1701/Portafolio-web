@@ -75,7 +75,6 @@ const ContentProyects = () => {
     const callbackPlantillas = (entries) => {
         const [entry] = entries
         setIsVisible(entry.isIntersecting)
-        console.log(entry)
         
         if (isVisible) {
             contentPlts.style.opacity = "1"
